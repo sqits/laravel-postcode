@@ -1,0 +1,44 @@
+{
+    "name": "sqits/laravel-postcode",
+    "description": "Laravel wrapper for the postcode-nl api",
+    "keywords": ["laravel", "postcode", "nederland", "Nederland", "zipcode", "postcode nederland", "postcode-nl"],
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Sqits",
+            "email": "info@sqits.nl",
+            "homepage": "https://www.sqits.nl",
+            "role": "Company"
+        },
+        {
+            "name": "Milan Jansen",
+            "email": "m.jansen@sqits.nl",
+            "homepage": "https://www.sqits.nl",
+            "role": "Developer"
+        },
+        {
+            "name": "Gerben Speelpenning",
+            "email": "gerben@speelpenning.nl",
+            "role": "Main package developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "laravel/framework": "^5.8|^6.0",
+        "guzzlehttp/guzzle": "^6.3",
+        "laravel/helpers": "^1.1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "sqits\\postcode\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "sqits\\postcode\\PostcodeServiceProvider"
+            ]
+        }
+    }
+}
