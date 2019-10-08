@@ -50,6 +50,20 @@ This is the contents of the published config file:
     'enableRoutes' => env('POSTCODENL_ENABLE_ROUTES', false),
 ```
 
+### Using the JSON API
+
+In order to use the API, enabled it in the configuration. When enabled, the following route is available:
+                                                                         
+```php
+route('postcode-nl::address', [$postcode, $houseNumber, $houseNumberAddition = null]);
+```
+
+or use the following URL (e.g. for AJAX calls):
+
+```
+/postcode-nl/address/{postcode}/{houseNumber}/{houseNumberAddition?}
+```
+
 ## Configuration
 
 ### Credentials (required)
