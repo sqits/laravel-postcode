@@ -50,14 +50,6 @@ This is the contents of the published config file:
     'enableRoutes' => env('POSTCODENL_ENABLE_ROUTES', false),
 ```
 
-### Changelog
-
-Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
-
-## Security
-
-If you discover any security-related issues, please [email](mailto:info@sqits.nl) to info@sqits.nl instead of using the issue tracker.
-
 ## Configuration
 
 ### Credentials (required)
@@ -84,6 +76,15 @@ By default, the client waits 10 seconds for a response. You may set a different 
 ```ini
 POSTCODENL_TIMEOUT=<timeout-in-seconds>
 ```
+
+### Changelog
+
+Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
+
+## Security
+
+If you discover any security-related issues, please [email](mailto:info@sqits.nl) to info@sqits.nl instead of using the issue tracker.
+
 
 ## Credits
 
