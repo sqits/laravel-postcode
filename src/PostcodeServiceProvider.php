@@ -23,6 +23,12 @@ class PostcodeServiceProvider extends ServiceProvider
 
         // Register the controller.
         $this->app->make('sqits\postcode\controllers\AddressController');
+
+        // Register the service.
+        $this->app->make('sqits\postcode\services\AddressService');
+
+        // Register the validation.
+        $this->app->make('sqits\postcode\validators\AddressValidator');
     }
 
     /**
