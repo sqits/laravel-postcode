@@ -21,8 +21,8 @@ class PostcodeClient
     /**
      * Client constructor.
      *
-     * @param Repository $config
-     * @param PostcodeClient $client
+     * @param  Repository  $config
+     * @param  \GuzzleHttp\Client  $client
      */
     public function __construct(Repository $config, Client $client)
     {

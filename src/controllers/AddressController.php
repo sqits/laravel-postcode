@@ -4,19 +4,19 @@ namespace Sqits\Postcode\Controllers;
 
 use Illuminate\Http\JsonResponse;
 use Illuminate\Routing\Controller;
-use Sqits\Postcode\Src\Services\AddressService;
+use Sqits\Postcode\Services\AddressService;
 
 class AddressController extends Controller
 {
     /**
-     * @var \Sqits\Postcode\Src\Services\AddressService
+     * @var \Sqits\Postcode\Services\AddressService
      */
     protected $addressService;
 
     /**
      * AddressController constructor.
      *
-     * @param  \Sqits\Postcode\Src\Services\AddressService  $addressService
+     * @param  \Sqits\Postcode\Services\AddressService  $addressService
      */
     public function __construct(AddressService $addressService)
     {

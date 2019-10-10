@@ -22,6 +22,7 @@ class PostcodeServiceProvider extends ServiceProvider
      * Bootstrap services.
      *
      * @return void
+     * @throws \Illuminate\Contracts\Container\BindingResolutionException
      */
     public function boot()
     {
@@ -32,5 +33,8 @@ class PostcodeServiceProvider extends ServiceProvider
 
         // Routes
         $this->loadRoutesFrom(__DIR__.'/routes/routes.php');
+
+        // Register the controller.
+        $this->app->make('Sqits\Postcode\AddressController');
     }
 }
