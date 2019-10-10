@@ -1,6 +1,6 @@
 <?php
 
-namespace Sqits\Postcode\Src\Services;
+namespace Sqits\Postcode\Services;
 
 use Sqits\Postcode\Address;
 use Sqits\Postcode\PostcodeClient;

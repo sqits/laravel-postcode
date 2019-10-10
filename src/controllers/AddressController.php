@@ -1,6 +1,6 @@
 <?php
 
-namespace Sqits\Postcode\Src\Controllers;
+namespace Sqits\Postcode\Controllers;
 
 use Illuminate\Http\JsonResponse;
 use Illuminate\Routing\Controller;
