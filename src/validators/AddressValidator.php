@@ -1,6 +1,6 @@
 <?php
 
-namespace sqits\postcode\validators;
+namespace Sqits\Postcode\Validators;
 
 use Illuminate\Http\JsonResponse;
 use Illuminate\Validation\Factory;

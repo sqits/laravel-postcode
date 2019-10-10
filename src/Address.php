@@ -1,6 +1,6 @@
 <?php
 
-namespace sqits\postcode;
+namespace Sqits\Postcode;
 
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Contracts\Support\Jsonable;

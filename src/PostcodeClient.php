@@ -1,6 +1,6 @@
 <?php
 
-namespace sqits\postcode;
+namespace Sqits\Postcode;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;

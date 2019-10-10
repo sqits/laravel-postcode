@@ -1,10 +1,10 @@
 <?php
 
-namespace sqits\postcode\src\services;
+namespace Sqits\Postcode\Src\Services;
 
-use sqits\postcode\Address;
-use sqits\postcode\PostcodeClient;
-use sqits\postcode\validators\AddressValidator;
+use Sqits\Postcode\Address;
+use Sqits\Postcode\PostcodeClient;
+use Sqits\Postcode\Validators\AddressValidator;
 
 class AddressService
 {

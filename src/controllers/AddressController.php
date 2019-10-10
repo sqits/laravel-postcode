@@ -1,22 +1,22 @@
 <?php
 
-namespace sqits\postcode\src\controllers;
+namespace Sqits\Postcode\Src\Controllers;
 
 use Illuminate\Http\JsonResponse;
 use Illuminate\Routing\Controller;
-use sqits\postcode\src\services\AddressService;
+use Sqits\Postcode\Src\Services\AddressService;
 
 class AddressController extends Controller
 {
     /**
-     * @var \sqits\postcode\src\services\AddressService
+     * @var \Sqits\Postcode\Src\Services\AddressService
      */
     protected $addressService;
 
     /**
      * AddressController constructor.
      *
-     * @param  \sqits\postcode\src\services\AddressService  $addressService
+     * @param  \Sqits\Postcode\Src\Services\AddressService  $addressService
      */
     public function __construct(AddressService $addressService)
     {
