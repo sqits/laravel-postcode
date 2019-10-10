@@ -10,19 +10,25 @@ class PostcodeServiceProvider extends ServiceProvider
      * Register services.
      *
      * @return void
+     * @throws \Illuminate\Contracts\Container\BindingResolutionException
      */
     public function register()
     {
         $this->mergeConfigFrom(
             __DIR__.'/../config/address.php', 'address'
         );
+
+        // Routes
+        $this->loadRoutesFrom(__DIR__.'/routes/routes.php');
+
+        // Register the controller.
+        $this->app->make('Sqits\Postcode\AddressController');
     }
 
     /**
      * Bootstrap services.
      *
      * @return void
-     * @throws \Illuminate\Contracts\Container\BindingResolutionException
      */
     public function boot()
     {
@@ -30,11 +36,5 @@ class PostcodeServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../config/address.php' => config_path('address.php'),
         ], 'config');
-
-        // Routes
-        $this->loadRoutesFrom(__DIR__.'/routes/routes.php');
-
-        // Register the controller.
-        $this->app->make('Sqits\Postcode\AddressController');
     }
 }
