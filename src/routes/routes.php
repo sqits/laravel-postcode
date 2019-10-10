@@ -6,7 +6,7 @@ Route::group(['as' => 'postcode-nl::'], function () {
 
     Route::get('postcode/{postcode}/{houseNumber}/{houseNumberAddition?}', [
         'as' => 'address',
-        'uses' => 'sqits\postcode\src\controllers\AddressController@show'
+        'uses' => 'Sqits\Postcode\Src\Controllers\AddressController@show'
     ]);
 
 });
