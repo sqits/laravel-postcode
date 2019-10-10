@@ -22,7 +22,7 @@ class PostcodeServiceProvider extends ServiceProvider
         $this->loadRoutesFrom(__DIR__.'/routes/routes.php');
 
         // Register the controller.
-        $this->app->make('Sqits\Postcode\AddressController');
+        $this->app->make('Sqits\Postcode\Controllers\AddressController');
     }
 
     /**
