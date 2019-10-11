@@ -4,7 +4,7 @@ namespace Sqits\Postcode\Controllers;
 
 use Illuminate\Http\JsonResponse;
 use Illuminate\Routing\Controller;
-use Sqits\Postcode\Services\AddressService;
+use sqits\postcode\services\AddressService;
 
 class AddressController extends Controller
 {

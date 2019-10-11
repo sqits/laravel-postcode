@@ -3,9 +3,6 @@
 namespace Sqits\Postcode;
 
 use Illuminate\Support\ServiceProvider;
-use Sqits\Postcode\Controllers\AddressController;
-use Sqits\Postcode\Services\AddressService;
-use Sqits\Postcode\Validators\AddressValidator;
 
 class PostcodeServiceProvider extends ServiceProvider
 {
@@ -13,22 +10,13 @@ class PostcodeServiceProvider extends ServiceProvider
      * Register services.
      *
      * @return void
+     * @throws \Illuminate\Contracts\Container\BindingResolutionException
      */
     public function register()
     {
         $this->mergeConfigFrom(
             __DIR__.'/../config/address.php', 'address'
         );
-
-        // Register the controller.
-        $this->app->singleton(AddressController::class, function ($app) {
-            return new AddressController($app[AddressService::class]);
-        });
-
-        // Register the service.
-        $this->app->singleton(AddressService::class, function ($app) {
-            return new AddressService($app[AddressValidator::class], $app[PostcodeClient::class]);
-        });
     }
 
     /**

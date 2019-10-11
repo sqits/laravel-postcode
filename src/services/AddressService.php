@@ -2,9 +2,9 @@
 
 namespace Sqits\Postcode\Services;
 
-use Sqits\Postcode\Address;
-use Sqits\Postcode\PostcodeClient;
-use Sqits\Postcode\Validators\AddressValidator;
+use sqits\postcode\Address;
+use sqits\postcode\PostcodeClient;
+use sqits\postcode\validators\AddressValidator;
 
 class AddressService
 {
