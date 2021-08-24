@@ -20,7 +20,16 @@ This is the contents of the published config file:
      * Request options required for GuzzleHttp client.
      */
     'requestOptions' => [
-
+        
+        /*
+         * URI
+         *
+         * Settings which api url the package should use. There are several endpoints available
+         */
+        'uri' => [
+            'extension' => env('POSTCODENL_URI_EXTENSION', 'nl'),
+        ],
+        
         /*
          * Authentication
          *

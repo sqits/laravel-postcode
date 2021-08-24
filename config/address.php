@@ -7,6 +7,15 @@ return [
     'requestOptions' => [
 
         /*
+         * URI
+         *
+         * Settings which api url the package should use. There are several endpoints available
+         */
+        'uri' => [
+            'extension' => env('POSTCODENL_URI_EXTENSION', 'nl'),
+        ],
+
+        /*
          * Authentication
          *
          * Register an account with Postcode.nl to obtain a key and secret. See https://api.postcode.nl/#register for

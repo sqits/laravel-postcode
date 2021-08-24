@@ -68,6 +68,6 @@ class AddressService
      */
     public function getUri(string $postcode, int $houseNumber, string $houseNumberAddition = null): string
     {
-        return "https://api.postcode.nl/rest/addresses/$postcode/$houseNumber/$houseNumberAddition";
+        return "https://api.postcode.".config('address.requestOptions.uri.extension')."/rest/addresses/$postcode/$houseNumber/$houseNumberAddition";
     }
 }
